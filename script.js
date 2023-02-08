@@ -33,6 +33,7 @@ let sharingNumber = +prompt('Задание №2\nНахождение наиб�
 let counter2 = 1;
 let maxSharing = 1;
 function maxSharingNumber(num) {
+    if (num == 2) return 2;
     if(num % counter2 == 0) maxSharing = counter2;
     counter2++;
     if(num == (counter2 + 1)) return maxSharing;
